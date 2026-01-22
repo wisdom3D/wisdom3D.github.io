@@ -1,0 +1,380 @@
+/* ===========================
+   RESET DE BASE
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #fbbf24;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  border-bottom: 2px solid #fbbf24;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   LISTES
+=========================== */
+ul {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #fff;
+  margin-bottom: 0.8rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+}
+
+/* ===========================
+   EXPERIENCE
+=========================== */
+section#experience ul li {
+  border-left: 4px solid #fbbf24;
+}
+
+/* ===========================
+   PROJETS AVEC IMAGES
+=========================== */
+.project-card {
+  display: flex;
+  background-color: #fff;
+  border-left: 4px solid #fbbf24;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+.project-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-info a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   COMPETENCES
+=========================== */
+section#skills ul li {
+  border-left: 4px solid #1d4ed8;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+section#contact p {
+  font-weight: 500;
+}
+
+section#contact a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+section#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   ARTICLES MEDIUM
+=========================== */
+.article-card {
+  background-color: #fff;
+  border-left: 4px solid #10b981;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+}
+
+.article-info h3 {
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.article-info p {
+  margin-bottom: 0.8rem;
+  color: #555;
+}
+
+.article-info a {
+  color: #10b981;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.article-info a:hover {
+  text-decoration: underline;
+}
+
+.medium-link {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.medium-link a {
+  color: #111827;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.medium-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   CARROUSEL CERTIFICATIONS
+=========================== */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.4s ease;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.certification-card {
+  min-width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-top: 4px solid #6366f1;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.certification-card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+}
+
+.certification-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.certification-card p {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.6rem;
+}
+
+.certification-card a {
+  color: #6366f1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.certification-card a:hover {
+  text-decoration: underline;
+}
+
+.certification-card:hover {
+  transform: translateY(-3px);
+}
+
+/* BOUTONS CARROUSEL */
+.carousel-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background-color: #111827;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  opacity: 1;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  header nav a {
+    margin: 0;
+  }
+
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .certification-card {
+    min-width: 80%;
+  }
+}
+
+/* ===========================
+   YOUTUBE
+=========================== */
+.youtube-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.youtube-card {
+  background-color: #fff;
+  border-left: 4px solid #f43f5e; /* rouge vif */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  padding: 1rem;
+  flex: 1 1 300px; /* flexible width */
+  max-width: 500px;
+  transition: transform 0.2s;
+}
+
+.youtube-card:hover {
+  transform: translateY(-3px);
+}
+
+.youtube-card h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.youtube-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
